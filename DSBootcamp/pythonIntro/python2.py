@@ -37,3 +37,38 @@ print(quote.replace("not", "yeah"))
 is_cool = True
 print(type(is_cool))
 print(bool(0))
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+    ]
+
+print(matrix[1][2])
+
+basket =[1,2,3,4,5]
+
+print(basket.append(100))
+print(basket)
+
+basket.insert(2, 200)
+print(basket)
+
+basket.extend([300,301])
+print(basket)
+
+newlist = basket.pop()
+print(newlist)
+print(basket)
+
+newlist = basket.extend([1000])
+print(newlist)
+print(basket)
+
+newlist = basket.remove(100)
+print(newlist)
+print(basket)
+
+newlist = basket.clear()
+print(newlist)
+print(basket)
