@@ -1,3 +1,6 @@
+from turtle import back
+
+
 print(type(int(str(100))))
 
 a = str(100)
@@ -72,3 +75,42 @@ print(basket)
 newlist = basket.clear()
 print(newlist)
 print(basket)
+
+basket =[1,2,5,4,5]
+
+print(5 in basket)
+print(basket.count(5))
+#print(basket.sort())
+print(sorted(basket))
+
+newlist = basket.copy()
+print(newlist)
+
+newlist.reverse()
+print(newlist)
+
+basket.reverse()
+print(basket)
+
+list = list(range(1,25))
+print(list)
+
+newsentence = " ".join(["Hi", "bro", "!"])
+print(newsentence)
+
+a,b,c,*mix,d = [1,2,3,4,5,6,7,8,9]
+print(a)
+print(b)
+print(c)
+print(mix)
+print(d)
+
+mylist = [
+    {"a": [1,2,3],
+    "b": "hello",
+    "x": False},
+    {"a": [4,5,6],
+    "b": "hello",
+    "x": False}
+]
+print(mylist[0]["x"])
