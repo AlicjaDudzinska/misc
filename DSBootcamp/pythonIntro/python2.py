@@ -1,6 +1,6 @@
 from turtle import back
 
-
+#strings
 print(type(int(str(100))))
 
 a = str(100)
@@ -41,6 +41,7 @@ is_cool = True
 print(type(is_cool))
 print(bool(0))
 
+#matrix
 matrix = [
     [1,2,3],
     [4,5,6],
@@ -49,6 +50,7 @@ matrix = [
 
 print(matrix[1][2])
 
+#lists
 basket =[1,2,3,4,5]
 
 print(basket.append(100))
@@ -114,3 +116,80 @@ mylist = [
     "x": False}
 ]
 print(mylist[0]["x"])
+
+#disctionaries
+mydictionary = {"a": [1,2,3],
+    "b": "hello",
+    "x": False}
+
+print(mydictionary.get("age"))
+
+user = dict(name = "Alicja")
+print(user)
+print("name" in user)
+print("Alicja" in user)
+print("Alicja" in user.values())
+print(("name",'Alicja') in user.items())
+print(user.items())
+user.clear()
+print(user)
+
+user2 = dict(name = "Raimon")
+user3 = user2.copy()
+print(user2)
+print(user3)
+print(user3.pop("name"))
+print(user3)
+print(user2.popitem())
+
+user4 = dict(name = "Raimon")
+user4.update({"name": "Iwona"})
+print(user4)
+
+#tuples
+mytuple =(1,2,3)
+print(3 in mytuple)
+
+newtuple = mytuple[1:2]
+print(newtuple)
+extratuple = mytuple[1:4]
+print(extratuple)
+
+print(mytuple.count(1))
+print(mytuple.index(3))
+print(len(mytuple))
+
+#sets
+myset = {1,2,3,4,5,5,4,3,2,1}
+print(myset)
+myset.add(100)
+myset.add(2)
+print(myset)
+
+listx = [1,1,1,1,1]
+print(set(listx))
+
+print(len(myset))
+
+yourset = {3,4,5,6,8,9}
+print(myset.difference(yourset))
+
+myset.discard(5)
+print(myset)
+
+myset.difference_update(yourset)
+print(myset)
+
+myset.intersection(yourset)
+print(myset)
+print(myset & yourset)
+
+print(myset.isdisjoint(yourset))
+
+print(myset.union(yourset))
+print(myset | yourset)
+
+print(myset.issubset(yourset))
+
+print(myset.issuperset(yourset))
+print(yourset.issuperset(myset))
