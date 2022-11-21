@@ -38,3 +38,31 @@ elif is_magician and not is_expert:
     print("At least you are getting there")
 elif not is_magician:
     print("You need magic powers")
+
+#Loops
+for item in "Alicja":
+    print(item)
+
+for item in (1,2,3,4,5):
+    print(item)
+    print(item)
+    print(item)
+print(item)
+
+for item in [1,2,3]:
+    for x in ['a','b','c']:
+        print(item, x)
+
+user = {
+    "name": "Alicja",
+    "age": 32
+}
+
+for item in user.items():
+    print(item)
+
+for item in user.values():
+    print(item)
+
+for item in user.keys():
+    print(item)
